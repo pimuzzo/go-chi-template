@@ -9,7 +9,7 @@ Includes Swagger documentation, basic validation and a clean separation of conce
 - 🔀 Routing and middleware with `chi`
 - 📄 Swagger UI documentation (`/docs`)
 - ✅ Request validation with `go-playground/validator`
-- 🧪 Unit-test friendly structure (in progress)
+- 🧪 Unit-test friendly structure
 - 🐳 Minimal Docker support
 - 🧰 Designed as a reusable starter template
 
