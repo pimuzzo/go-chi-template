@@ -17,3 +17,9 @@ func SaveUser(u model.User) {
 	users = append(users, u)
 	logger.Log.Info("User Created")
 }
+
+// ResetUsers clears the in-memory user store.
+// Used only in tests to ensure isolation between runs.
+func ResetUsers() {
+	users = []model.User{}
+}
