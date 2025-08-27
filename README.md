@@ -10,13 +10,14 @@ Includes Swagger documentation, basic validation and a clean separation of conce
 - 📄 Swagger UI documentation (`/docs`)
 - ✅ Request validation with `go-playground/validator`
 - 🧪 Unit-test friendly structure (in progress)
-- 🐳 Minimal Docker support (in progress)
+- 🐳 Minimal Docker support
 - 🧰 Designed as a reusable starter template
 
 ## 📦 Technologies
 
 - Go 1.22+
 - chi v5
+- logrus
 - swaggo/swag for Swagger
 - go-playground/validator
 

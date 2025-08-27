@@ -27,5 +27,8 @@ func main() {
 		handler.RegisterRoutes(r)
 	})
 
-	http.ListenAndServe(":8080", r)
+	logger.Log.Info("Starting server")
+	if err := http.ListenAndServe(":8080", r); err != nil {
+		logger.Log.WithError(err).Fatal("Server failed to start")
+	}
 }
