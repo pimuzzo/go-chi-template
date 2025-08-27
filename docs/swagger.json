@@ -2,7 +2,7 @@
     "swagger": "2.0",
     "info": {
         "description": "This is a template REST API using Chi",
-        "title": "Go CHI Template",
+        "title": "Go Chi Template",
         "contact": {},
         "version": "0.1.0"
     },

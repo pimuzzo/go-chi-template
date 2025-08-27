@@ -5,8 +5,8 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
-	"github.com/pimuzzo/go-chi-api/internal/handler"
-	"github.com/pimuzzo/go-chi-api/pkg/logger"
+	"github.com/pimuzzo/go-chi-template/internal/handler"
+	"github.com/pimuzzo/go-chi-template/pkg/logger"
 )
 
 // @title Go Chi Template

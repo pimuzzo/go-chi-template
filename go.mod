@@ -1,4 +1,4 @@
-module github.com/pimuzzo/go-chi-api
+module github.com/pimuzzo/go-chi-template
 
 go 1.24.4
 

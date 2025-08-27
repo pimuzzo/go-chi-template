@@ -106,7 +106,7 @@ var SwaggerInfo = &swag.Spec{
 	Host:             "localhost:8080",
 	BasePath:         "/api/v1",
 	Schemes:          []string{},
-	Title:            "Go CHI Template",
+	Title:            "Go Chi Template",
 	Description:      "This is a template REST API using Chi",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
