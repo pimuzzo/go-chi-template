@@ -6,6 +6,7 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/pimuzzo/go-chi-api/internal/handler"
+	"github.com/pimuzzo/go-chi-api/pkg/logger"
 )
 
 // @title Go Chi Template
@@ -14,11 +15,12 @@ import (
 // @host localhost:8080
 // @BasePath /api/v1
 func main() {
-	r := chi.NewRouter()
+	logger.Init()
 
+	r := chi.NewRouter()
+	r.Use(middleware.RequestLogger(&middleware.DefaultLogFormatter{Logger: logger.Log}))
 	r.Use(middleware.RequestID)
 	r.Use(middleware.RealIP)
-	r.Use(middleware.Logger)
 	r.Use(middleware.Recoverer)
 
 	r.Route("/api/v1", func(r chi.Router) {
