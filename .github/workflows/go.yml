@@ -1,0 +1,36 @@
+name: Go CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Test and Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧾 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+
+      - name: 📦 Download dependencies
+        run: go mod tidy
+
+      - name: ✅ Run tests
+        run: go test ./test/... -v
+
+      - name: 🧼 Check formatting
+        run: |
+          UNFORMATTED=$(gofmt -l .)
+          if [ -n "$UNFORMATTED" ]; then
+            echo "⚠️ Found unformatted files:"
+            echo "$UNFORMATTED"
+            exit 1
+          fi
