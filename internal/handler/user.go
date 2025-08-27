@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/pimuzzo/go-chi-api/internal/model"
-	"github.com/pimuzzo/go-chi-api/internal/service"
+	"github.com/pimuzzo/go-chi-template/internal/model"
+	"github.com/pimuzzo/go-chi-template/internal/service"
 )
 
 func RegisterRoutes(r chi.Router) {

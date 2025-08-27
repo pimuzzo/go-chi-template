@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/pimuzzo/go-chi-api/internal/handler"
-	"github.com/pimuzzo/go-chi-api/pkg/logger"
+	"github.com/pimuzzo/go-chi-template/internal/handler"
+	"github.com/pimuzzo/go-chi-template/pkg/logger"
 )
 
 func setupRouter() http.Handler {

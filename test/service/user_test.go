@@ -3,9 +3,9 @@ package service_test
 import (
 	"testing"
 
-	"github.com/pimuzzo/go-chi-api/internal/model"
-	"github.com/pimuzzo/go-chi-api/internal/service"
-	"github.com/pimuzzo/go-chi-api/pkg/logger"
+	"github.com/pimuzzo/go-chi-template/internal/model"
+	"github.com/pimuzzo/go-chi-template/internal/service"
+	"github.com/pimuzzo/go-chi-template/pkg/logger"
 )
 
 func setup() {
