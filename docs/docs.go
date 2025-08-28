@@ -23,7 +23,7 @@ const docTemplate = `{
                 "tags": [
                     "User"
                 ],
-                "summary": "User get endpoint",
+                "summary": "Get users",
                 "responses": {
                     "200": {
                         "description": "OK",
@@ -46,7 +46,7 @@ const docTemplate = `{
                 "tags": [
                     "User"
                 ],
-                "summary": "User create endpoint",
+                "summary": "Create user",
                 "parameters": [
                     {
                         "description": "User to create",
@@ -107,7 +107,7 @@ var SwaggerInfo = &swag.Spec{
 	BasePath:         "/api/v1",
 	Schemes:          []string{},
 	Title:            "Go Chi Template",
-	Description:      "This is a template REST API using Chi",
+	Description:      "",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 	LeftDelim:        "{{",

@@ -5,21 +5,21 @@ import (
 	"github.com/pimuzzo/go-chi-template/pkg/logger"
 )
 
-var users = []model.User{}
+var fakeDb = []model.User{}
 
 func GetAllUsers() []model.User {
 	logger.Log.Debug("Reading all users")
-	return users
+	return fakeDb
 }
 
 func SaveUser(u model.User) {
 	logger.Log.Debug("Creating user")
-	users = append(users, u)
+	fakeDb = append(fakeDb, u)
 	logger.Log.Info("User Created")
 }
 
 // ResetUsers clears the in-memory user store.
 // Used only in tests to ensure isolation between runs.
 func ResetUsers() {
-	users = []model.User{}
+	fakeDb = []model.User{}
 }

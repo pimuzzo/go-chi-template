@@ -23,9 +23,6 @@ jobs:
       - name: 📦 Download dependencies
         run: go mod tidy
 
-      - name: ✅ Run tests
-        run: go test ./test/... -v
-
       - name: 🧼 Check formatting
         run: |
           UNFORMATTED=$(gofmt -l .)
@@ -34,3 +31,6 @@ jobs:
             echo "$UNFORMATTED"
             exit 1
           fi
+
+      - name: ✅ Run tests
+        run: go test ./test/... -v

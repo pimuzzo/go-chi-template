@@ -17,7 +17,7 @@ func RegisterRoutes(r chi.Router) {
 }
 
 // GetUsers godoc
-// @Summary User get endpoint
+// @Summary Get users
 // @Tags User
 // @Produce json
 // @Success 200 {array} model.User
@@ -28,7 +28,7 @@ func GetUsers(w http.ResponseWriter, r *http.Request) {
 }
 
 // CreateUser godoc
-// @Summary User create endpoint
+// @Summary Create user
 // @Tags User
 // @Accept json
 // @Produce json
