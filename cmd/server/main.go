@@ -11,7 +11,6 @@ import (
 
 // @title Go Chi Template
 // @version 0.1.0
-// @description This is a template REST API using Chi
 // @host localhost:8080
 // @BasePath /api/v1
 func main() {

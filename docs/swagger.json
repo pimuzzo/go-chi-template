@@ -1,7 +1,6 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "This is a template REST API using Chi",
         "title": "Go Chi Template",
         "contact": {},
         "version": "0.1.0"
@@ -17,7 +16,7 @@
                 "tags": [
                     "User"
                 ],
-                "summary": "User get endpoint",
+                "summary": "Get users",
                 "responses": {
                     "200": {
                         "description": "OK",
@@ -40,7 +39,7 @@
                 "tags": [
                     "User"
                 ],
-                "summary": "User create endpoint",
+                "summary": "Create user",
                 "parameters": [
                     {
                         "description": "User to create",

@@ -32,3 +32,4 @@ swag init -g cmd/server/main.go
 
 # Run the server
 go run ./cmd/server
+```

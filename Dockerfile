@@ -17,5 +17,7 @@ COPY --from=builder /app/go-chi-template .
 COPY --from=builder /etc/passwd /etc/passwd
 COPY --from=builder /etc/group /etc/group
 
+EXPOSE 8080
+
 USER appuser
 CMD ["./go-chi-template"]
